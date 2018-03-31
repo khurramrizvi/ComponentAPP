@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blugrad"
+    tools:context="com.rizvi.comp.MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#000000">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_margin="10dp"
+        android:textColorHint="#ff0245"
+        android:textColor="#ff0245"
+        android:hint="Enter Random Stuff!"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Education"
+        android:textColor="#ff0245"
+        android:id="@+id/ck1"
+        android:layout_below="@id/editText"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0245"
+        android:text="Games"
+        android:id="@+id/ck2"
+        android:layout_below="@id/ck1"
+        />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sw1"
+        android:textColor="#ff0245"
+        android:layout_alignLeft="@id/ck2"
+        android:switchPadding="159dp"
+        android:paddingTop="40dp"
+        android:layout_margin="10dp"
+        android:text="Do you want to enable fun!"
+        android:textSize="20dp"
+        android:layout_below="@id/ck2"/>
+
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sw2"
+        android:textColor="#ff0245"
+        android:layout_alignLeft="@id/ck2"
+        android:switchPadding="100dp"
+        android:paddingTop="40dp"
+        android:layout_margin="10dp"
+        android:text="Do you want to enable happiness!"
+        android:textSize="20dp"
+        android:paddingBottom="80dp"
+        android:layout_below="@id/sw1"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/rb1"
+        android:layout_below="@id/sw2"/>
+
+    <TextView
+        android:id="@id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rb1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Rate Me!"
+        android:textAlignment="center"
+        android:paddingBottom="80dp"
+        android:textColor="#ff0245" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:textAlignment="center"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Begin!"
+        android:textColor="#ff0245" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp"
+        android:fontFamily="serif"
+        android:paddingTop="50dp"
+        android:text="developed by Khurran Rizvi"
+        android:textAlignment="center"
+        android:textColor="#ff0245"
+        android:textSize="20dp"
+        android:textStyle="italic|bold" />
+
+</RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
